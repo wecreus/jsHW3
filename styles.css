@@ -1,5 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
+    background-color: #23272a;
+    color: white;
 }
 
 .Content-Holder {
@@ -9,80 +11,46 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
-
-}
-
-.mainForm {
-    width: 48%;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.mainForm-group {
-    width: auto;
-    padding: 6px 5px;
-    margin: 4px 0;
-    display: block;
-    height: 20px;
-    transition: background-color 250ms;
-}
-
-.mainForm-group:hover{
-   background-color: #f1f1f1;
-}
-
-.a, .b {
-    float: right;
-    width: 40px;
-}
-
-
-.form-submit {
-    font-size: 105%;
-    font-weight: bold;
-    float: right;
-    padding: 6px 25px;
-    margin: 10px 5px;
-    border-radius: 25px;
-    border: 2px solid #aeb0b7;
-    cursor: pointer;
-    background: linear-gradient(white 20%, rgb(227, 230, 234) 50%);
-    background-size:1px 250px;
-}
-
-.form-submit:hover {
-    color: black;
-    border: 2px solid black;
-    background-position: 400px;
-    transition-property: border, color, background;
-    transition-duration: 500ms;
-}
-
-.tableHolder {
-    width: 48%;
-    min-width: 340px;
-    height: 340px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-
-}
-
-.emptyTableHolder {
-    border: 5px dashed #adadad;
+    background: #3e464b;
 }
 
 .table {
+    border: 1px solid white;
     border-spacing: 0;
     border-collapse: collapse;
-    margin: auto auto;
-    vertical-align: center;
+    width: 100%;
 }
 
-.table td {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border: 1px solid black;
-    background-clip: padding-box;
+.table th, td {
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.hoverRow {
+    transition-duration: 300ms;
+}
+
+.hoverRow:hover {
+    background: #59636c;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+}
+
+.order {
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.order:hover {
+    background: #59636c;
+}
+
+.order-up:after{
+    content: " ↑";
+}
+
+.order-down:after{
+    content: " ↓";
 }
