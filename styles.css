@@ -41,6 +41,7 @@ body {
 .order {
     cursor: pointer;
     transition-duration: 300ms;
+    user-select: none;
 }
 
 .order:hover {
